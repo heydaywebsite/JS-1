@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex-3</title>
+</head>
+
+<body>
+  <script>
+    a = 10 + 10 + "10";
+    console.log(a);//2010 - складываем два числа 10+10=20 конкатенируем со строкой "10"
+    b = 10 + "10" + 10;
+    console.log(b);//101010 - конкатенируем число, строку и число
+    с = 10 + 10 + +"10";//+"" действует как parseInt, превращая строку в число, поэтому в итоге складываются три числа 10+10+10=30
+    console.log(с);
+    d = 10 / -"";//-Infinity, -"" - это -0, деление на ноль генерирует бесконечность в JS
+    console.log(d);
+    e = 10 / +"2,5";
+    console.log(e);//NaN - если бы между 2 и 5 была точка, то строка +"2.5" стала бы числом, а так при делении числа 10 на строку выводит "NaN" - not a namber
+  </script>
+</body>
+
+</html>
