@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex-5</title>
+</head>
+
+<body>
+  <script>
+    'use strict';
+    function addition(a, b) {
+      return a + b;
+    }
+    function subtraction(a, b) {
+      return a - b;
+    }
+    function multiplication(a, b) {
+      return a * b;
+    }
+    function division(a, b) {
+      return a / b;
+    }
+
+    function mathOperation(arg1, arg2, operation) {
+      switch (operation) {
+        case '+':
+          return addition(arg1, arg2);
+        case '-':
+          return subtraction(arg1, arg2);
+        case '*':
+          return multiplication(arg1, arg2);
+        case '/':
+          return division(arg1, arg2);
+        default:
+          console.log('Программа выполняет сложение(+), вычитание(-), умножение(*) и деление(/)');
+      }
+    }
+    console.log(mathOperation(2, 3, '+'));
+    console.log(mathOperation(2, 3, '-'));
+    console.log(mathOperation(2, 3, '*'));
+    console.log(mathOperation(2, 3, '/'));
+  </script>
+</body>
+
+</html>
