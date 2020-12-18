@@ -10,17 +10,28 @@
 <body>
   <script>
     'use strict';
-    let a = 4;
-    let b = -6;
-    if (a >= 0 && b >= 0) {
-      console.log('Оба числа - положительные, разность чисел: ' + (a - b));
-    }
-    else if (a < 0 && b < 0) {
-      console.log('Оба числа - отрицательные, произведение чисел: ' + (a * b));
-    }
-    else {
-      console.log('Числа - разных знаков: ' + (a + b));
-    }
+    /**
+    *Алгоритм вывода стоимости товара с 15%-й скидкой
+    */
+    const products = [
+      {
+        id: 3,
+        price: 200,
+      },
+      {
+        id: 4,
+        price: 900,
+      },
+      {
+        id: 1,
+        price: 1000,
+      },
+    ];
+    products.forEach((item) => {
+      item.price -= item.price * 0.15;
+      console.log('Стоимость товара ' + item.id + ' со скидкой 15%: ' + item.price);
+    })
+
   </script>
 </body>
 
